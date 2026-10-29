@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-notes-generator"
+version = "0.1.0"
+description = "Generate structured literature-note Markdown files (Zettelkasten style) from BibTeX entries."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+paper-notes-generator = "paper_notes_generator.cli:main"
+
+[tool.setuptools]
+packages = ["paper_notes_generator"]
